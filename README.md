@@ -1,0 +1,1 @@
+Getting MuP to work on NanoGPT codebase with minimal changes
