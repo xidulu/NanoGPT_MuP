@@ -1,5 +1,6 @@
 /result_viz.ipynb
 /__pycache__
+/wandb
 /.ipynb_checkpoints
 # other common files
 *.pyc
