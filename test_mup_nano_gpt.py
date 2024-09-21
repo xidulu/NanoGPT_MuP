@@ -54,7 +54,7 @@ config_base = GPTConfig(
     vocab_size=50257,
     n_layer = 12,  # default: 12
     n_head = 12, # default: 12
-    n_embd = 48,  # default: 768
+    n_embd = 192,  # default: 768
     block_size = 256,  # default: 1024
     bias = False,
     return_dict=True
@@ -65,14 +65,15 @@ config_delta = GPTConfig(
     n_layer = 12,  # default: 12
     n_head = 12, # default: 12
     n_embd = 96,  # default: 768
-    block_size = 256,  # default: 1024
+    block_size = 384,  # default: 1024
     bias = False,
     return_dict=True
 )
 
 model_base = GPT(config_base)
 model_delta = GPT(config_delta)
-make_base_shapes(model_base, model_delta, f'./gpt_48.bsh')
+# make_base_shapes(model_base, model_delta, f'./gpt_48.bsh')
+make_base_shapes(model_base, model_delta, f'./gpt_192.bsh')
 
 model_dict = {}
 for n_embd in [48, 96, 192, 384, 768]:
@@ -86,7 +87,7 @@ for n_embd in [48, 96, 192, 384, 768]:
         return_dict=True
     )
     model = GPT(config)
-    set_base_shapes(model,  f'./gpt_48.bsh', rescale_params=True, do_assert=False)
+    set_base_shapes(model,  f'./gpt_192.bsh', rescale_params=True, do_assert=False)
     model_dict[str(n_embd)] = model
 
 sequence = list(range(200))

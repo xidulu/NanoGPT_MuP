@@ -1,0 +1,125 @@
+# This is a base shape file encoded in yaml
+# - `null` indicates a dimension is "finite", i.e. a non-"width" dimension
+# - a number indicates the base dimension of an "infinite" dimension, i.e. some notion of "width"
+transformer.h.0.attn.c_attn.bias:
+- 192
+transformer.h.0.attn.c_attn.weight:
+- 192
+- 64
+transformer.h.0.attn.c_proj.bias:
+- 64
+transformer.h.0.attn.c_proj.weight:
+- 64
+- 64
+transformer.h.0.ln_1.bias:
+- 64
+transformer.h.0.ln_1.weight:
+- 64
+transformer.h.0.ln_2.bias:
+- 64
+transformer.h.0.ln_2.weight:
+- 64
+transformer.h.0.mlp.c_fc.bias:
+- 256
+transformer.h.0.mlp.c_fc.weight:
+- 256
+- 64
+transformer.h.0.mlp.c_proj.bias:
+- 64
+transformer.h.0.mlp.c_proj.weight:
+- 64
+- 256
+transformer.h.1.attn.c_attn.bias:
+- 192
+transformer.h.1.attn.c_attn.weight:
+- 192
+- 64
+transformer.h.1.attn.c_proj.bias:
+- 64
+transformer.h.1.attn.c_proj.weight:
+- 64
+- 64
+transformer.h.1.ln_1.bias:
+- 64
+transformer.h.1.ln_1.weight:
+- 64
+transformer.h.1.ln_2.bias:
+- 64
+transformer.h.1.ln_2.weight:
+- 64
+transformer.h.1.mlp.c_fc.bias:
+- 256
+transformer.h.1.mlp.c_fc.weight:
+- 256
+- 64
+transformer.h.1.mlp.c_proj.bias:
+- 64
+transformer.h.1.mlp.c_proj.weight:
+- 64
+- 256
+transformer.h.2.attn.c_attn.bias:
+- 192
+transformer.h.2.attn.c_attn.weight:
+- 192
+- 64
+transformer.h.2.attn.c_proj.bias:
+- 64
+transformer.h.2.attn.c_proj.weight:
+- 64
+- 64
+transformer.h.2.ln_1.bias:
+- 64
+transformer.h.2.ln_1.weight:
+- 64
+transformer.h.2.ln_2.bias:
+- 64
+transformer.h.2.ln_2.weight:
+- 64
+transformer.h.2.mlp.c_fc.bias:
+- 256
+transformer.h.2.mlp.c_fc.weight:
+- 256
+- 64
+transformer.h.2.mlp.c_proj.bias:
+- 64
+transformer.h.2.mlp.c_proj.weight:
+- 64
+- 256
+transformer.h.3.attn.c_attn.bias:
+- 192
+transformer.h.3.attn.c_attn.weight:
+- 192
+- 64
+transformer.h.3.attn.c_proj.bias:
+- 64
+transformer.h.3.attn.c_proj.weight:
+- 64
+- 64
+transformer.h.3.ln_1.bias:
+- 64
+transformer.h.3.ln_1.weight:
+- 64
+transformer.h.3.ln_2.bias:
+- 64
+transformer.h.3.ln_2.weight:
+- 64
+transformer.h.3.mlp.c_fc.bias:
+- 256
+transformer.h.3.mlp.c_fc.weight:
+- 256
+- 64
+transformer.h.3.mlp.c_proj.bias:
+- 64
+transformer.h.3.mlp.c_proj.weight:
+- 64
+- 256
+transformer.ln_f.bias:
+- 64
+transformer.ln_f.weight:
+- 64
+transformer.wpe.weight:
+- null
+- 64
+transformer.wte.weight:
+- null
+- 64

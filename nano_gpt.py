@@ -215,7 +215,7 @@ class GPT(nn.Module):
         # print(x.shape, (x**2).sum(-1).mean([0, 1]))
         # import ipdb;ipdb.set_trace()
         x = self.transformer.ln_f(x)
-        # For MuP, manually simulate the MuReadout layer
+        # For MuP, manually simulate the MuReadout layer scaling
         x = x * self.config.base_n_embd / self.config.n_embd
         if targets is not None:
             # if we are given some desired targets also calculate the loss

@@ -1,0 +1,81 @@
+# This is a base shape file encoded in yaml
+# - `null` indicates a dimension is "finite", i.e. a non-"width" dimension
+# - a number indicates the base dimension of an "infinite" dimension, i.e. some notion of "width"
+transformer.h.0.attn.c_attn.weight:
+- 1152
+- 384
+transformer.h.0.attn.c_proj.weight:
+- 384
+- 384
+transformer.h.0.mlp.c_fc.weight:
+- 1536
+- 384
+transformer.h.0.mlp.c_proj.weight:
+- 384
+- 1536
+transformer.h.1.attn.c_attn.weight:
+- 1152
+- 384
+transformer.h.1.attn.c_proj.weight:
+- 384
+- 384
+transformer.h.1.mlp.c_fc.weight:
+- 1536
+- 384
+transformer.h.1.mlp.c_proj.weight:
+- 384
+- 1536
+transformer.h.2.attn.c_attn.weight:
+- 1152
+- 384
+transformer.h.2.attn.c_proj.weight:
+- 384
+- 384
+transformer.h.2.mlp.c_fc.weight:
+- 1536
+- 384
+transformer.h.2.mlp.c_proj.weight:
+- 384
+- 1536
+transformer.h.3.attn.c_attn.weight:
+- 1152
+- 384
+transformer.h.3.attn.c_proj.weight:
+- 384
+- 384
+transformer.h.3.mlp.c_fc.weight:
+- 1536
+- 384
+transformer.h.3.mlp.c_proj.weight:
+- 384
+- 1536
+transformer.h.4.attn.c_attn.weight:
+- 1152
+- 384
+transformer.h.4.attn.c_proj.weight:
+- 384
+- 384
+transformer.h.4.mlp.c_fc.weight:
+- 1536
+- 384
+transformer.h.4.mlp.c_proj.weight:
+- 384
+- 1536
+transformer.h.5.attn.c_attn.weight:
+- 1152
+- 384
+transformer.h.5.attn.c_proj.weight:
+- 384
+- 384
+transformer.h.5.mlp.c_fc.weight:
+- 1536
+- 384
+transformer.h.5.mlp.c_proj.weight:
+- 384
+- 1536
+transformer.wpe.weight:
+- 384
+- 384
+transformer.wte.weight:
+- null
+- 384
